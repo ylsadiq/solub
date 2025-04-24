@@ -1,0 +1,1 @@
+sass --watch "D:\wp_learn\task-2\assets\scss\main.scss:D:\wp_learn\task-2\assets\css/style"

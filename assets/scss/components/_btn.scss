@@ -1,0 +1,28 @@
+@use '../utils/' as *;
+
+.wpr__btn_orange{
+    padding: 24px 40px;
+    background-color: var(--wpr-primary-color);
+    border-radius: 10px;
+    font-family: var(--wpr-font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--wpr-body-color);
+}
+    .wpr__btn_green{
+        padding: 24px 30px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 12px;
+    }
+    .wpr__btn_outline{
+        padding: 20px 40px;
+        border: 1px solid var(--wpr-offwhite-color);
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 12px;
+        letter-spacing: 1px;
+    }

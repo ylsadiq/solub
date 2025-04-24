@@ -1,0 +1,32 @@
+// wpr-transition 
+@mixin wpr-transition($value: all 0.3s ease){
+    -webkit-transition: #{$value};
+    -o-transition: #{$value};
+    transition: #{$value};
+}
+
+// translateX 
+@mixin translateX($x: 0) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+  
+
+// placeholder input
+@mixin wpr-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}

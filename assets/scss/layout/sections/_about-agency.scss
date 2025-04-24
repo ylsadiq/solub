@@ -1,0 +1,80 @@
+@use "../../utils/" as *;
+.wpr_about {
+  &__img_small {
+    bottom: 10px;
+    right: 0;
+  }
+  &_sm_img {
+    bottom: 75px;
+    right: 8px;
+  }
+  &_check__list {
+    li {
+      display: flex;
+      align-items: center;
+      font-family: var(--wpr-font-body);
+      font-size: 16px;
+      color: var(--wpr-dark-color);
+      line-height: 34px;
+      letter-spacing: 0.5px;
+      .wpr_check__icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: var(--wpr-primary-color);
+        border-radius: 50%;
+      }
+    }
+  }
+    &_shape{
+      bottom: 0;
+      right: 0;  
+    }
+}
+
+.wpr_case__badge {
+  top: 15px;
+  right: 50px;
+}
+// circular text with svg
+.badge-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 50px auto;
+  background-color: var(--wpr-body-color);
+  box-shadow: 0 4px 12px rgba(3, 4, 28, 0.1);
+  border-radius: 50%;
+}
+.text-ring {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.rotating-text {
+  animation: spin 10s linear infinite;
+  transform-origin: center;
+  & text {
+    font-size: 9px;
+    font-family: var(--wpr-font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+}
+.center-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

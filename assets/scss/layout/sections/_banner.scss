@@ -1,0 +1,122 @@
+.wpr_banner__area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wpr_banner {
+  &__subtitle {
+    font-family: var(--wpr-font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--wpr-body-color);
+    color: var(--wpr-body-color);
+    padding: 0 0 5px 0;
+    line-height: 1;
+    letter-spacing: 1.5px;
+  }
+  &__title {
+    margin: 30px 0 65px 0;
+    font-family: var(--wpr-font-heading);
+    font-weight: 700;
+    font-size: 90px;
+    color: var(--wpr-body-color);
+    line-height: 0.9;
+    letter-spacing: 1.1px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  &__video {
+    display: flex;
+    .popup-video {
+      border-radius: 100%;
+      backdrop-filter: blur(5px);
+      height: 90px;
+      width: 90px;
+      display: inline-block;
+      line-height: 85px;
+      text-align: center;
+    }
+    .video-text {
+      margin-left: 15px;
+      align-self: center;
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+}
+.happy_customer_card {
+  position: absolute;
+  right: 250px;
+  bottom: 0;
+  max-width: 400px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__content {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 45px 30px;
+    width: 100%;
+    background: var(--wpr-theme-color);
+    color: var(--wpr-dark-color);
+    .happy_customer_card__text {
+      font-family: var(--wpr-font-heading);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+  &__number {
+    display: flex;
+
+    gap: 20px;
+    text-align: center;
+    background: var(--wpr-button-color);
+    padding: 20px 30px;
+    width: 100%;
+
+    .happy_number_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-color: var(--wpr-green--color);
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+    }
+    .happy_number_count {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .happy_number {
+        color: var(--wpr-body-color);
+        font-family: var(--wpr-font-heading);
+        margin: 0;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 2;
+      }
+      .happy_number_text {
+        font-family: var(--wpr-font-body);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1;
+        color: var(--wpr-body-color);
+        opacity: 0.75;
+      }
+    }
+  }
+}

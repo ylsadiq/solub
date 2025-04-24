@@ -1,0 +1,28 @@
+.wpr_achivment {
+  &_content {
+    gap: 100px;
+    border-radius: 81px;
+    margin-top: -90px;
+    background-color: var(--wpr-body-color);
+    padding: 60px;
+    border-radius: 81px;
+    margin-bottom: -30px;
+  }
+  &_count {
+    margin-bottom: 20px;
+  }
+  &_number {
+    font-family: var(--wpr-font-heading);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: var(--wpr-primary-color);
+  }
+  span {
+    font-family: var(--wpr-font-heading);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

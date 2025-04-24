@@ -1,0 +1,314 @@
+@use "../utils/" as *;
+
+.w-img {
+  & img {
+    width: 100%;
+  }
+}
+.m-img {
+  & img {
+    max-width: 100%;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+  position: relative;
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+.z-index-3 {
+  z-index: 3;
+  position: relative;
+}
+
+.z-index-11 {
+  z-index: 11;
+  position: relative;
+}
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+// bg color
+.white-bg {
+  background-color: var(--wpr-body-color);
+}
+.bg-black {
+  background-color: var(--tp-black-color);
+}
+.bg-grey {
+  background-color: var(--tp-grey-color);
+}
+.bg-theme {
+  background-color: var(--wpr-theme-color);
+}
+.bg_primary {
+  background-color: var(--wpr-primary-color);
+}
+.bg_button {
+  background-color: var(--wpr-button-color);
+}
+// color
+.color {
+  &__white {
+    color: var(--wpr-body-color);
+  }
+  &__dark {
+    color: var(--wpr-dark-color);
+  }
+  &__theme {
+    color: var(--wpr-theme-color);
+  }
+  &__primary {
+    color: var(--wpr-primary-color);
+  }
+  &__btn {
+    color: var(--wpr-button-color);
+  }
+  &__secondary {
+    color: var(--wpr-secondary-color);
+  }
+  &__offwhite {
+    color: var(--wpr-offwhite-color-2);
+  }
+}
+// box shadow
+.shadow {
+  &__1 {
+    box-shadow: 0px 0px 30px 0px rgba(17, 17, 45, 0.1);
+  }
+  &__2 {
+    box-shadow: 0px 30px 50px 0px rgba(3, 4, 28, 0.1);
+  }
+  &__3 {
+    box-shadow: 0px 0px 30px 0pxrgba (25, 24, 49, 0.08);
+  }
+}
+// bg image css
+.bg-cover {
+  background-size: cover;
+}
+
+// font family
+.wpr_sub_jakarta {
+  font-family: var(--wpr-font-sub-heading);
+}
+.wpr_font__inter {
+  font-family: var(--wpr-font-body);
+}
+.wpr_font__niconne {
+  font-family: var(--wpr-player-font);
+}
+.wpr_heading_font {
+  font-family: var(--wpr-font-heading);
+}
+
+// font weight
+.fnw {
+  &-300 {
+    font-weight: 300;
+  }
+  &-400 {
+    font-weight: 400;
+  }
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+}
+
+// radius
+.br {
+  &-10 {
+    border-radius: 10px;
+  }
+  &-12 {
+    border-radius: 12px;
+  }
+  &-16 {
+    border-radius: 16px;
+  }
+  &-20 {
+    border-radius: 16px;
+  }
+  &-30 {
+    border-radius: 30px;
+  }
+}
+
+// height
+.tp-h-630 {
+  min-height: 630px;
+}
+
+// margin spacing
+.mt {
+  &_15 {
+    margin-top: 15px;
+  }
+  &_30 {
+    margin-top: 30px;
+  }
+  &_50 {
+    margin-top: 50px;
+  }
+  &_60 {
+    margin-top: 60px;
+  }
+  &_75 {
+    margin-top: 75px;
+  }
+  &_90 {
+    margin-top: 90px;
+  }
+  &_140 {
+    margin-top: 140px;
+  }
+}
+.ml {
+  &_5 {
+    margin-left: 5px;
+  }
+  &_10 {
+    margin-left: 10px;
+  }
+  &_20 {
+    margin-left: 20px;
+  }
+  &_100 {
+    margin-left: 100px;
+  }
+  &_350 {
+    margin-left: 350px;
+  }
+}
+.mr {
+  &_5 {
+    margin-right: 5px;
+  }
+  &_10 {
+    margin-right: 10px;
+  }
+  &_20 {
+    margin-right: 20px;
+  }
+  &_50 {
+    margin-right: 50px;
+  }
+  &_80 {
+    margin-right: 80px;
+  }
+  &_100 {
+    margin-right: 100px;
+  }
+}
+.mb {
+  &_10 {
+    margin-bottom: 10px;
+  }
+  &_20 {
+    margin-bottom: 20px;
+  }
+  &_30 {
+    margin-bottom: 30px;
+  }
+  &_35 {
+    margin-bottom: 35px;
+  }
+  &_60 {
+    margin-bottom: 60px;
+  }
+  &_80 {
+    margin-bottom: 80px;
+  }
+  &_140 {
+    margin-bottom: 140;
+  }
+}
+//padding spacing
+.p {
+  &_10 {
+    padding: 10px;
+  }
+  &_20 {
+    padding: 20px;
+  }
+}
+.pt {
+  &_85 {
+    padding-top: 85px;
+  }
+  &_140 {
+    padding-top: 140px;
+  }
+}
+.pb {
+  &_20 {
+    padding-bottom: 20px;
+  }
+  &_80 {
+    padding-bottom: 80px;
+  }
+  &_140 {
+    padding-bottom: 140px;
+  }
+}
+.container {
+  &-1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.wpr_subtitle {
+  font-family: var(--wpr-font-sub-heading);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: var(--wpr-button-color);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.wpr_title {
+  font-family: var(--wpr-font-heading);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+}
+.wpr_text_details {
+  font-family: var(--wpr-font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--wpr-secondary-color);
+}
