@@ -18,6 +18,9 @@
     justify-content: center;
   }
   &__content {
+    @media #{$lg,$md,$xs} {
+      width: auto;
+    }
     width: 100%;
   }
 }
@@ -123,6 +126,9 @@
 .wpr_contact__btn {
   font-family: var(--wpr-font-heading);
   padding: 0.5rem 3rem;
+  @media #{$lg,$md,$xs} {
+    padding: 0.5rem 1.5rem;
+  }
   background-color: var(--wpr-primary-color-2);
   color: var(--wpr-body-color);
   border-radius: 6px;

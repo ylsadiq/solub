@@ -1,4 +1,5 @@
-.wpr_achivment {
+@use '../../utils/' as *;
+  .wpr_achivment {
   &_content {
     gap: 100px;
     border-radius: 81px;
@@ -7,6 +8,9 @@
     padding: 60px;
     border-radius: 81px;
     margin-bottom: -30px;
+     @media #{$lg,$md,$xs} {
+    flex-direction: column;
+  }
   }
   &_count {
     margin-bottom: 20px;
